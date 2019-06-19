@@ -6,13 +6,16 @@ body{
   padding:0px;
   background-image: url(../images/seamless_paper_texture.png);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 /* Top Bar */
 .header{
   padding: 0px;
   background: #ffffff;
   border-bottom: 5px solid #cccccc;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   height:100px;
 }
 /* Top Bar Content*/
@@ -52,17 +55,18 @@ body{
   border-left:2px solid #777777;
   padding-left: 5px;
 }
-/* Primary Content Container */
+/* About Me Content */
 .pageContent{
   margin-left: 250px;
   background-color: #ffffff;
   border: 2px solid #cccccc;
   width: 960px;
-  margin-bottom: 67px;
+  /* margin-bottom: 67px; */
 }
 /* Content Title */
 #contentTitle{
-  padding: 20px;
+  padding: 15px;
+  padding-left: 0;
   margin-left: 20px;
   margin-right:20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -70,16 +74,80 @@ body{
   font-size: 32px;
   border-bottom: 2px solid #cccccc;
 }
-/* Content Body */
+/* About Me Content Body */
 #aboutmeContent{
   padding: 20px;
   line-height: 150%;
   font-size: 18px;
 }
+/* Contact Content Body */
+#contactForm{
+  padding: 20px;
+  font-size: 18px;
+  line-height: 50%;
+}
+/* Name & Email boxes */
+input{
+  width:100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+/* Message Box */
+textarea{
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+
+}
+/* Submit Button */
+#contactSubmit{
+  background-color:#4aaaa5;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
 /* Image float  */
 #ericSmirk{
   float: left;
   margin-right: 20px;
+}
+
+/* Portfolio Image Gallery */
+/*.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+/* Spacer */
+.spacer {
+  flex: 1;
 }
 /* footer */
 footer{
