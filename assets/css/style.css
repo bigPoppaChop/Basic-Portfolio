@@ -125,12 +125,15 @@ textarea{
 }
 
 /* Portfolio Image Gallery */
-.container {
-  margin: 20px;
+.galleryCard {
   position: relative;
-  width: 180px;
+  width: 250px;
   border: 1px solid #ccc;
   float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .desc {
@@ -141,9 +144,12 @@ textarea{
   text-align: center;
   font-size: 18px;
   background-color: #4aaaa5;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-img { 
+.cardPic { 
   width: 100%;
   height: auto;
 }
